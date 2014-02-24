@@ -143,7 +143,7 @@ defmodule Benchmark do
     end
   end
 
-  defp run_for_executor(d, func, total // 0, tests // []) do
+  defp run_for_executor(d, func, total \\ 0, tests \\ []) do
     cond do
       total >= d ->
         tests
